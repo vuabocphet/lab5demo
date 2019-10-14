@@ -28,9 +28,10 @@
      android:layout_weight="0"
      android:src="@drawable/add" />
 </LinearLayout>
-<ListView
+<androidx.recyclerview.widget.RecyclerView
     android:layout_width="match_parent"
     android:layout_height="match_parent"
- android:id="@+id/lvList"/>
+    tools:listitem="@layout/note_item"
+    android:id="@+id/lvList"/>
 
 </LinearLayout>

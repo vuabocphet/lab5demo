@@ -3,37 +3,27 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_marginTop="15dp"
-    android:orientation="vertical"
     android:layout_height="match_parent"
-    android:paddingLeft="20dp"
+    android:orientation="vertical"
+    android:padding="16dp"
     tools:context=".Main2Activity">
-<TextView
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
 
-    android:text="Nội dung"/>
   <EditText
+      android:id="@+id/edit_text_title"
       android:layout_width="match_parent"
       android:layout_height="wrap_content"
-      android:id="@+id/edNoiDung"
-      android:layout_marginBottom="20dp"
-      android:hint="abc"/>
+      android:hint="Title"
+      android:inputType="text" />
+
+  <EditText
+      android:id="@+id/edit_text_description"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:hint="Description"
+      android:inputType="textMultiLine" />
 
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
 
-        android:text="Ngày"/>
-    <EditText
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/edNgay"
-        android:hint="abc"/>
-    <Button
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Submit"
-        android:onClick="Submit"/>
+
+
 </LinearLayout>
